@@ -3,7 +3,7 @@
 This repository presents the full implementation and automation of a predictive machine learning solution developed on Microsoft Azure Machine Learning. It demonstrates core competencies required for the **DP-100: Designing and Implementing a Data Science Solution on Azure** certification.
 
 ## 🔗 Main Project
-- **[Azure DP-100 - Ice Cream Sales Forecasting](./README.md)**  
+- **[Azure DP-100 - Ice Cream Sales Forecasting](https://github.com/AndreLuiz-Cardoso/Data-Science/tree/main/Azure/Azure%20DP-100/Project-1)**  
   A complete end-to-end project using Azure ML Studio and AutoML to predict ice cream sales based on temperature. It includes both a manual pipeline and an automated model selection and evaluation process.
 
 ## 📁 Directory Structure
