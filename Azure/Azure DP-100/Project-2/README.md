@@ -43,10 +43,10 @@ The RAG model was powered by vector embeddings from the following peer-reviewed 
 Below are test results showing the chatbot responding accurately based on scientific embeddings:
 
 ### 🔹 Sample 1
-![Chat Test - Sample 1](/mnt/data/print1_resized.png)
+![Chat Test - Sample 1](/img/print1.png)
 
 ### 🔹 Sample 2
-![Chat Test - Sample 2](/mnt/data/print2_resized.png)
+![Chat Test - Sample 2](/img/print2.png)
 
 > The chatbot successfully extracted insights and provided source-based responses aligned with the input documents.
 
