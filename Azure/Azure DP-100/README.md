@@ -6,7 +6,7 @@ This repository showcases practical and certification-aligned projects developed
 
 ## 🔗 Projects
 
-### 🧊 [Project 1 - Ice Cream Sales Forecasting](./Project-1/README.md)
+### 🧊 [Project 1 - Ice Cream Sales Forecasting](./Project-1/)
 An end-to-end regression solution using Azure ML to forecast ice cream sales based on temperature data. It includes:
 
 - A manual ML pipeline built with **Azure ML Designer**
@@ -21,7 +21,7 @@ An end-to-end regression solution using Azure ML to forecast ice cream sales bas
 
 ---
 
-### 🤖 [Project 2 - Scientific RAG Chatbot Using Azure AI Foundry](./Project-2/README.md)
+### 🤖 [Project 2 - Scientific RAG Chatbot Using Azure AI Foundry](./Project-2/)
 This innovative project implements a **Retrieval-Augmented Generation (RAG)** chatbot using **Azure AI Foundry** and vector embeddings. It enables question answering from **three peer-reviewed scientific articles** on AI and blockchain.
 
 - Built using **Azure Cognitive Search**, **LangChain**, and **GPT-4 via Azure OpenAI**
