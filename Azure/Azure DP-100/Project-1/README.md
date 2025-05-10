@@ -49,7 +49,7 @@ In the ice cream industry, sales are highly dependent on temperature. Retailers 
 - Evaluate Model
 
 ### Image:
-![Manual Pipeline](img/pipeline.png)
+![Manual Pipeline](Img/pipeline.png)
 
 ### Outcome
 - This approach served as a benchmark and functional test for predicting sales.
@@ -75,7 +75,7 @@ In the ice cream industry, sales are highly dependent on temperature. Retailers 
 - **Asset URI:** [Model Link](https://ml.azure.com)
 
 ### Image:
-![Experiment Metadata](img/01.png)
+![Experiment Metadata](Img/01.png)
 
 ---
 
@@ -95,7 +95,7 @@ In the ice cream industry, sales are highly dependent on temperature. Retailers 
 | Spearman Correlation                | 0.94709  |
 
 ### Image:
-![AutoML Summary](img/02.png)
+![AutoML Summary](Img/02.png)
 
 These results confirm high predictive power and low error margins, making the model robust and suitable for deployment.
 
@@ -126,20 +126,11 @@ project-folder/
 │   ├── 02.png
 │   └── 03.png
 ├── outputs/
-├── automl_driver.py
+├── logs/azureml/
+├──automl_driver.py
 ├── cyan_truck_ptggd842xf.jsonl
 ├── definition.json
 ├── definition_original.json
-├── full_training_dataset.df.parquet
-├── model.pkl
-├── python_env.yaml
-├── requirements.txt
-├── conda.yaml
-├── MLmodel
-├── verifier_results.json
-├── X_valid.pkl
-├── y_valid.pkl
-├── sample_weight_valid.pkl
 └── README.md  ← (this file)
 ```
 
