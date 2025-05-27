@@ -42,6 +42,7 @@ The project highlights a complete **data-driven web application**, from UI logic
 ├── EURONEXT.csv          # Tickers from European markets
 ├── requirements.txt      # List of dependencies
 └── README.md             # You're here :)
+```
 
 ## 🚀 Try it Live
 
