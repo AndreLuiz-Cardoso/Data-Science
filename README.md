@@ -42,6 +42,16 @@ Welcome to my curated collection of **Data Science projects**, which demonstrate
 
   **Real-world Relevance:** User engagement analysis, content performance benchmarking, viewer segmentation
 
+- [**Global Stock Price App**](https://github.com/AndreLuiz-Cardoso/Data-Science/tree/main/Global%20Stock%20Price%20App)  
+  A real-time financial dashboard built with **Streamlit**, enabling users to compare historical stock performance across **Brazil 🇧🇷**, **USA 🇺🇸**, and **Europe 🇪🇺**.  
+  It includes:
+  - Interactive date range filtering  
+  - Automatic portfolio return simulation  
+  - Dynamic line charts using live market data from Yahoo Finance  
+  - Robust handling of missing or sparse datasets  
+
+  **Real-world Relevance:** Investment analysis, asset comparison tools, financial analytics dashboards.
+
 ## 📊 Data Analysis Projects
 
 Explore more data storytelling and business intelligence projects in my live portfolio:  
