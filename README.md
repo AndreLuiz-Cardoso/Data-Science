@@ -42,7 +42,7 @@ Welcome to my curated collection of **Data Science projects**, which demonstrate
 
   **Real-world Relevance:** User engagement analysis, content performance benchmarking, viewer segmentation
 
-- [**Global Stock Price App**](https://github.com/AndreLuiz-Cardoso/Data-Science/tree/main/Global%20Stock%20Price%20App)  
+- [**Global Stock Price App**](https://github.com/AndreLuiz-Cardoso/Data-Science/tree/main/Global_Stock_Price_App)  
   A real-time financial dashboard built with **Streamlit**, enabling users to compare historical stock performance across **Brazil 🇧🇷**, **USA 🇺🇸**, and **Europe 🇪🇺**.  
   It includes:
   - Interactive date range filtering  
