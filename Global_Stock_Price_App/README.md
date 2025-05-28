@@ -24,21 +24,21 @@ Here are examples of the interactive dashboards powered by the app:
 
 ### 📊 1. Cross-Market Comparison (Brazil + USA)
 
-![Global Stock App TSLA vs PETR4](./0%20stocksus.png)  
+![Global Stock App TSLA vs PETR4](https://raw.githubusercontent.com/AndreLuiz-Cardoso/Data-Science/main/Global_Stock_Price_App/img/0%20stocksus.png) 
 Users can select companies from multiple regions (e.g., Tesla in the USA and Petrobras in Brazil) and compare their historical performance side by side. The app shows percentage return and final portfolio value based on a simulated investment.
 
 ---
 
 ### 🇧🇷 2. Brazil-Only Portfolio Analysis
 
-![Global Stock App BR stocks](./1%20stocksbrazil.png)  
+![Global Stock App BR stocks](https://raw.githubusercontent.com/AndreLuiz-Cardoso/Data-Science/main/Global_Stock_Price_App/img/1%20stocksbrazil.png) 
 You can analyze multiple Brazilian assets such as PETR4, ABEV3, and B3SA3 simultaneously. The app calculates both individual and portfolio-level performance, displaying the growth (or loss) over time.
 
 ---
 
 ### 🇺🇸 3. USA Big Tech Portfolio Simulation
 
-![Global Stock App Tech Portfolio](./3%20diferentStocks.png)  
+![Global Stock App Tech Portfolio](https://raw.githubusercontent.com/AndreLuiz-Cardoso/Data-Science/main/Global_Stock_Price_App/img/3%20diferentStocks.png)
 Users can simulate a portfolio with companies like META, AAPL, AMZN, and more. The dashboard visualizes their price evolution and computes the total return of the equally-weighted portfolio over the selected period.
 
 ---
