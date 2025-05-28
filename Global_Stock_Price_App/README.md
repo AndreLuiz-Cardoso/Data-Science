@@ -48,7 +48,7 @@ The project highlights a complete **data-driven web application**, from UI logic
 
 Experience the app running in production:
 
-> 🌐 **Live Demo**: [https://your-app-name.streamlit.app](https://your-app-name.streamlit.app)  
+> 🌐 **Live Demo**: [https://your-app-name.streamlit.app](https://andre-cardoso-global-stock-price-app.streamlit.app/)  
 > *(Replace this with the actual URL after deployment on Streamlit Cloud)*
 
 No installation needed — just open the link and start exploring stock performance across the globe.
