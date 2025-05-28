@@ -2,27 +2,52 @@ import streamlit as st
 import pandas as pd
 import yfinance as yf
 from datetime import datetime
+import os
 
 st.set_page_config(layout="wide")
 st.title("📈 Global Stock Price App")
 st.markdown("Compare stock performance across Brazil 🇧🇷, USA 🇺🇸, and Europe 🇪🇺")
 
-# === Load tickers from each region ===
+# Debug: lista arquivos disponíveis no ambiente (útil para deploy)
+st.write("📁 Files in current directory:", os.listdir())
+
+# === Load tickers from each region with safe error handling ===
 @st.cache_data
 def load_tickers_brazil():
-    df = pd.read_csv("IBOV.csv", sep=";")
-    return {"🇧🇷 " + code.strip() + ".SA": code.strip() + ".SA" for code in df["Código"].dropna()}
+    try:
+        df = pd.read_csv("IBOV.csv", sep=";")
+        return {"🇧🇷 " + code.strip() + ".SA": code.strip() + ".SA" for code in df["Código"].dropna()}
+    except FileNotFoundError:
+        st.warning("⚠️ IBOV.csv file not found. Brazilian stocks will not be available.")
+        return {}
+    except Exception as e:
+        st.error(f"Unexpected error loading IBOV.csv: {e}")
+        return {}
 
 @st.cache_data
 def load_tickers_usa():
-    df = pd.read_csv("NASDAQ.csv")
-    return {"🇺🇸 " + symbol: symbol for symbol in df["Symbol"].dropna()}
+    try:
+        df = pd.read_csv("NASDAQ.csv")
+        return {"🇺🇸 " + symbol: symbol for symbol in df["Symbol"].dropna()}
+    except FileNotFoundError:
+        st.warning("⚠️ NASDAQ.csv file not found. U.S. stocks will not be available.")
+        return {}
+    except Exception as e:
+        st.error(f"Unexpected error loading NASDAQ.csv: {e}")
+        return {}
 
 @st.cache_data
 def load_tickers_europe():
-    df = pd.read_csv("EURONEXT.csv", sep=";")
-    df = df[df["Symbol"].notnull()]
-    return {"🇪🇺 " + symbol.strip(): symbol.strip() for symbol in df["Symbol"].dropna()}
+    try:
+        df = pd.read_csv("EURONEXT.csv", sep=";")
+        df = df[df["Symbol"].notnull()]
+        return {"🇪🇺 " + symbol.strip(): symbol.strip() for symbol in df["Symbol"].dropna()}
+    except FileNotFoundError:
+        st.warning("⚠️ EURONEXT.csv file not found. European stocks will not be available.")
+        return {}
+    except Exception as e:
+        st.error(f"Unexpected error loading EURONEXT.csv: {e}")
+        return {}
 
 @st.cache_data
 def fetch_data(tickers):
@@ -110,7 +135,6 @@ if has_data_in_range:
     filtered_data = stock_data[selected_tickers].loc[date_range[0]:date_range[1]]
 else:
     st.warning(f"Showing all available data (no data found for {date_range[0].date()} to {date_range[1].date()})")
-    # Mantém a seleção do usuário mas mostra todos os dados disponíveis
     filtered_data = stock_data[selected_tickers].dropna(how='all')
 
 # Remove linhas onde todas as ações estão com NaN
@@ -130,7 +154,6 @@ performance_summary = ""
 portfolio_returns = []
 
 for ticker in selected_tickers:
-    # Filtra dados específicos para cada ação
     series = filtered_data[ticker].dropna()
     
     if len(series) < 2:
